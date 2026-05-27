@@ -1,0 +1,98 @@
+{
+  "actualizacion": "2026-05-27T23:39:32.739Z",
+  "escrutinio": {
+    "escrutado": 15,
+    "boletin": 20,
+    "hora": "1899-12-30T10:26:16.000Z"
+  },
+  "candidatos": [
+    {
+      "id": 1,
+      "nombre": "Iván",
+      "apellido": "Cepeda",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/PNVOC72UCFGVPMUT43GEJNHMOY.png",
+      "vicepresidente": "Aída Quilcué",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-ivan-cepeda-perfil-de-la-victima-el-senador-y-la-ficha-del-petrismo-para-las-presidenciales-noticias-hoy/"
+    },
+    {
+      "id": 2,
+      "nombre": "Paloma",
+      "apellido": "Valencia",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/DDUKOTQKMZHCJLK3ZUZ6SZ3QCA.png",
+      "vicepresidente": "Juan Daniel Oviedo",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/este-es-el-perfil-de-paloma-valencia-senadora-caucana-filosofa-y-uribista-que-quiere-la-presidencia-de-colombia/"
+    },
+    {
+      "id": 3,
+      "nombre": "Abelardo",
+      "apellido": "de la Espriella",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/V42NOIS5AJBKHBBD4TVLG2FQKU.png",
+      "vicepresidente": "José Manuel Restrepo",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/este-es-el-perfil-de-abelardo-de-la-espriella-abogado-con-polemicas-que-busca-la-presidencia-en-2026-como-outsider/"
+    },
+    {
+      "id": 4,
+      "nombre": "Sergio",
+      "apellido": "Fajardo",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/YKJLEPEVONGTNGYNAARJVWM42Q.png",
+      "vicepresidente": "Edna Bonilla",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-sergio-fajardo-su-paso-por-la-alcaldia-de-medellin-la-gobernacion-de-antioquia-y-su-relacion-con-petro-y-uribe-noticias-hoy/"
+    },
+    {
+      "id": 5,
+      "nombre": "Claudia",
+      "apellido": "López",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/7W45GQLGZNA4DIOQTYDDBN37ZQ.png",
+      "vicepresidente": "Leonardo Huerta",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-claudia-lopez-su-paso-por-la-alcaldia-de-bogota-en-el-senado-y-su-salida-de-alianza-verde-noticias-hoy/"
+    },
+    {
+      "id": 6,
+      "nombre": "Gustavo",
+      "apellido": "Matamoros",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/M7DDNXFTHVDHLPI2U3555FRKOU.png",
+      "vicepresidente": "Mila María Paz",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/gustavo-matamoros-quien-es-el-general-que-quiere-ser-presidente-de-colombia-perfil-y-trayectoria-del-candidato-noticas-hoy/"
+    },
+    {
+      "id": 7,
+      "nombre": "Roy",
+      "apellido": "Barreras",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RPJ57BUBEVFXTKNGSE2GZ27XTE.png",
+      "vicepresidente": "Martha Lucía Zamora",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-roy-barreras-es-de-izquierda-o-derecha-cargos-politicos-trayectoria-y-hoja-de-vida/"
+    },
+    {
+      "id": 8,
+      "nombre": "Sondra",
+      "apellido": "Macollin",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/LIZA4V724BGQXJUZ3CU7A7HFWM.png",
+      "vicepresidente": "Leonardo Karam",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/biografia-de-sondra-macollins-trayectoria-de-la-abogada-que-es-candidata-presidencial/"
+    },
+    {
+      "id": 9,
+      "nombre": "Miguel",
+      "apellido": "Uribe L.",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RSWLHACCQJE4REBC6GQRCIDAHI.png",
+      "vicepresidente": "Luisa F. Villegas",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/miguel-uribe-lodono-biografia-padres-hijos-trayectoria-politica-y-sus-tragedias-familiares/"
+    },
+    {
+      "id": 10,
+      "nombre": "Mauricio",
+      "apellido": "Lizcano",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RPBSUZHVQNBFTLXXUTTGSBKLII.png",
+      "vicepresidente": "Luis Carlos Reyes",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-mauricio-lizcano-estos-son-los-giros-de-la-vida-y-la-politica-detras-de-su-candidatura-presidencial/"
+    },
+    {
+      "id": 11,
+      "nombre": "Santiago",
+      "apellido": "Botero",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/22OXP75M3BGB3IT6TJV3BQPRXE.png",
+      "vicepresidente": "Carlos F. Cuevas",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/santiago-botero-biografia-del-empresario-que-busca-la-presidencia-entre-izquierda-derecha-y-firmas-noticias-hoy/"
+    }
+  ]
+}
