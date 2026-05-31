@@ -1,5 +1,5 @@
 {
-  "actualizacion": "2026-05-31T22:24:56.372Z",
+  "actualizacion": "2026-05-31T22:25:56.213Z",
   "escrutinio": {
     "escrutado": "79.77",
     "boletin": 13,
@@ -20,8 +20,8 @@
       "id": 1,
       "nombre": "Iván",
       "apellido": "Cepeda",
-      "votos": 7534658,
-      "porcentaje": "41.51",
+      "votos": 9231677,
+      "porcentaje": "41.13",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/PNVOC72UCFGVPMUT43GEJNHMOY.png",
       "vicepresidente": "Aída Quilcué",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-ivan-cepeda-perfil-de-la-victima-el-senador-y-la-ficha-del-petrismo-para-las-presidenciales-noticias-hoy/"
@@ -30,21 +30,21 @@
       "id": 2,
       "nombre": "Paloma",
       "apellido": "Valencia",
-      "votos": 1201997,
-      "porcentaje": "6.62",
+      "votos": 1540978,
+      "porcentaje": "6.86",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/DDUKOTQKMZHCJLK3ZUZ6SZ3QCA.png",
       "vicepresidente": "Juan Daniel Oviedo",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/este-es-el-perfil-de-paloma-valencia-senadora-caucana-filosofa-y-uribista-que-quiere-la-presidencia-de-colombia/"
     },
     {
-      "id": 4,
-      "nombre": "Sergio",
-      "apellido": "Fajardo",
-      "votos": 722773,
-      "porcentaje": "3.98",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/YKJLEPEVONGTNGYNAARJVWM42Q.png",
-      "vicepresidente": "Edna Bonilla",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-sergio-fajardo-su-paso-por-la-alcaldia-de-medellin-la-gobernacion-de-antioquia-y-su-relacion-con-petro-y-uribe-noticias-hoy/"
+      "id": 5,
+      "nombre": "Claudia",
+      "apellido": "López",
+      "votos": 213332,
+      "porcentaje": "0.95",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/7W45GQLGZNA4DIOQTYDDBN37ZQ.png",
+      "vicepresidente": "Leonardo Huerta",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-claudia-lopez-su-paso-por-la-alcaldia-de-bogota-en-el-senado-y-su-salida-de-alianza-verde-noticias-hoy/"
     },
     {
       "id": 11,
@@ -55,16 +55,6 @@
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/22OXP75M3BGB3IT6TJV3BQPRXE.png",
       "vicepresidente": "Carlos F. Cuevas",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/santiago-botero-biografia-del-empresario-que-busca-la-presidencia-entre-izquierda-derecha-y-firmas-noticias-hoy/"
-    },
-    {
-      "id": 5,
-      "nombre": "Claudia",
-      "apellido": "López",
-      "votos": 155246,
-      "porcentaje": "0.85",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/7W45GQLGZNA4DIOQTYDDBN37ZQ.png",
-      "vicepresidente": "Leonardo Huerta",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-claudia-lopez-su-paso-por-la-alcaldia-de-bogota-en-el-senado-y-su-salida-de-alianza-verde-noticias-hoy/"
     },
     {
       "id": 10,
@@ -100,7 +90,7 @@
       "id": 7,
       "nombre": "Roy",
       "apellido": "Barreras",
-      "votos": 155246,
+      "votos": 13278,
       "porcentaje": "0.05",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RPJ57BUBEVFXTKNGSE2GZ27XTE.png",
       "vicepresidente": "Martha Lucía Zamora",
@@ -110,11 +100,21 @@
       "id": 6,
       "nombre": "Gustavo",
       "apellido": "Matamoros",
-      "votos": 4127,
+      "votos": 5296,
       "porcentaje": "0.02",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/M7DDNXFTHVDHLPI2U3555FRKOU.png",
       "vicepresidente": "Mila María Paz",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/gustavo-matamoros-quien-es-el-general-que-quiere-ser-presidente-de-colombia-perfil-y-trayectoria-del-candidato-noticas-hoy/"
+    },
+    {
+      "id": 4,
+      "nombre": "Sergio",
+      "apellido": "Fajardo",
+      "votos": 944555,
+      "porcentaje": "2026-02-04T05:00:00.000Z",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/YKJLEPEVONGTNGYNAARJVWM42Q.png",
+      "vicepresidente": "Edna Bonilla",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-sergio-fajardo-su-paso-por-la-alcaldia-de-medellin-la-gobernacion-de-antioquia-y-su-relacion-con-petro-y-uribe-noticias-hoy/"
     }
   ]
 }
