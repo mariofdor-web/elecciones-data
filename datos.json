@@ -1,5 +1,5 @@
 {
-  "actualizacion": "2026-05-31T22:25:56.213Z",
+  "actualizacion": "2026-05-31T22:26:55.502Z",
   "escrutinio": {
     "escrutado": "79.77",
     "boletin": 13,
@@ -50,8 +50,8 @@
       "id": 11,
       "nombre": "Santiago",
       "apellido": "Botero",
-      "votos": 164882,
-      "porcentaje": "0.9",
+      "votos": 196525,
+      "porcentaje": "0.87",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/22OXP75M3BGB3IT6TJV3BQPRXE.png",
       "vicepresidente": "Carlos F. Cuevas",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/santiago-botero-biografia-del-empresario-que-busca-la-presidencia-entre-izquierda-derecha-y-firmas-noticias-hoy/"
@@ -60,8 +60,8 @@
       "id": 10,
       "nombre": "Mauricio",
       "apellido": "Lizcano",
-      "votos": 43832,
-      "porcentaje": "0.24",
+      "votos": 51612,
+      "porcentaje": "0.22",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RPBSUZHVQNBFTLXXUTTGSBKLII.png",
       "vicepresidente": "Luis Carlos Reyes",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-mauricio-lizcano-estos-son-los-giros-de-la-vida-y-la-politica-detras-de-su-candidatura-presidencial/"
@@ -70,7 +70,7 @@
       "id": 9,
       "nombre": "Miguel",
       "apellido": "Uribe L.",
-      "votos": 21469,
+      "votos": 26830,
       "porcentaje": "0.11",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RSWLHACCQJE4REBC6GQRCIDAHI.png",
       "vicepresidente": "Luisa F. Villegas",
@@ -80,7 +80,7 @@
       "id": 8,
       "nombre": "Sondra",
       "apellido": "Macollin",
-      "votos": 15122,
+      "votos": 18788,
       "porcentaje": "0.08",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/LIZA4V724BGQXJUZ3CU7A7HFWM.png",
       "vicepresidente": "Leonardo Karam",
