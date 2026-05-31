@@ -1,11 +1,21 @@
 {
-  "actualizacion": "2026-05-31T22:08:56.410Z",
+  "actualizacion": "2026-05-31T22:09:55.498Z",
   "escrutinio": {
     "escrutado": 15,
     "boletin": 20,
     "hora": "5:30"
   },
   "candidatos": [
+    {
+      "id": 3,
+      "nombre": "Abelardo",
+      "apellido": "de la Espriella",
+      "votos": 7940846,
+      "porcentaje": "43.75",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/V42NOIS5AJBKHBBD4TVLG2FQKU.png",
+      "vicepresidente": "José Manuel Restrepo",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/este-es-el-perfil-de-abelardo-de-la-espriella-abogado-con-polemicas-que-busca-la-presidencia-en-2026-como-outsider/"
+    },
     {
       "id": 2,
       "nombre": "Paloma",
@@ -75,16 +85,6 @@
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/YKJLEPEVONGTNGYNAARJVWM42Q.png",
       "vicepresidente": "Edna Bonilla",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-sergio-fajardo-su-paso-por-la-alcaldia-de-medellin-la-gobernacion-de-antioquia-y-su-relacion-con-petro-y-uribe-noticias-hoy/"
-    },
-    {
-      "id": 3,
-      "nombre": "Abelardo",
-      "apellido": "de la Espriella",
-      "votos": 0,
-      "porcentaje": "0.0",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/V42NOIS5AJBKHBBD4TVLG2FQKU.png",
-      "vicepresidente": "José Manuel Restrepo",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/este-es-el-perfil-de-abelardo-de-la-espriella-abogado-con-polemicas-que-busca-la-presidencia-en-2026-como-outsider/"
     },
     {
       "id": 1,
