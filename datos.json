@@ -1,5 +1,5 @@
 {
-  "actualizacion": "2026-05-31T17:42:56.093Z",
+  "actualizacion": "2026-05-31T17:43:56.385Z",
   "escrutinio": {
     "escrutado": 15,
     "boletin": 20,
@@ -17,16 +17,6 @@
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-ivan-cepeda-perfil-de-la-victima-el-senador-y-la-ficha-del-petrismo-para-las-presidenciales-noticias-hoy/"
     },
     {
-      "id": 2,
-      "nombre": "Paloma",
-      "apellido": "Valencia",
-      "votos": 0,
-      "porcentaje": "0.0",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/DDUKOTQKMZHCJLK3ZUZ6SZ3QCA.png",
-      "vicepresidente": "Juan Daniel Oviedo",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/este-es-el-perfil-de-paloma-valencia-senadora-caucana-filosofa-y-uribista-que-quiere-la-presidencia-de-colombia/"
-    },
-    {
       "id": 3,
       "nombre": "Abelardo",
       "apellido": "de la Espriella",
@@ -35,6 +25,16 @@
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/V42NOIS5AJBKHBBD4TVLG2FQKU.png",
       "vicepresidente": "José Manuel Restrepo",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/este-es-el-perfil-de-abelardo-de-la-espriella-abogado-con-polemicas-que-busca-la-presidencia-en-2026-como-outsider/"
+    },
+    {
+      "id": 2,
+      "nombre": "Paloma",
+      "apellido": "Valencia",
+      "votos": 0,
+      "porcentaje": "0.0",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/DDUKOTQKMZHCJLK3ZUZ6SZ3QCA.png",
+      "vicepresidente": "Juan Daniel Oviedo",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/este-es-el-perfil-de-paloma-valencia-senadora-caucana-filosofa-y-uribista-que-quiere-la-presidencia-de-colombia/"
     },
     {
       "id": 4,
