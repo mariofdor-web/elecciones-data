@@ -1,5 +1,5 @@
 {
-  "actualizacion": "2026-05-31T22:10:56.021Z",
+  "actualizacion": "2026-05-31T22:11:55.728Z",
   "escrutinio": {
     "escrutado": 15,
     "boletin": 20,
@@ -47,74 +47,74 @@
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-sergio-fajardo-su-paso-por-la-alcaldia-de-medellin-la-gobernacion-de-antioquia-y-su-relacion-con-petro-y-uribe-noticias-hoy/"
     },
     {
-      "id": 5,
-      "nombre": "Claudia",
-      "apellido": "López",
-      "votos": 4127,
-      "porcentaje": "0.02",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/7W45GQLGZNA4DIOQTYDDBN37ZQ.png",
-      "vicepresidente": "Leonardo Huerta",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-claudia-lopez-su-paso-por-la-alcaldia-de-bogota-en-el-senado-y-su-salida-de-alianza-verde-noticias-hoy/"
-    },
-    {
-      "id": 9,
-      "nombre": "Miguel",
-      "apellido": "Uribe L.",
-      "votos": 0,
-      "porcentaje": "0.0",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RSWLHACCQJE4REBC6GQRCIDAHI.png",
-      "vicepresidente": "Luisa F. Villegas",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/miguel-uribe-lodono-biografia-padres-hijos-trayectoria-politica-y-sus-tragedias-familiares/"
-    },
-    {
-      "id": 6,
-      "nombre": "Gustavo",
-      "apellido": "Matamoros",
-      "votos": 0,
-      "porcentaje": "0.0",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/M7DDNXFTHVDHLPI2U3555FRKOU.png",
-      "vicepresidente": "Mila María Paz",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/gustavo-matamoros-quien-es-el-general-que-quiere-ser-presidente-de-colombia-perfil-y-trayectoria-del-candidato-noticas-hoy/"
-    },
-    {
-      "id": 8,
-      "nombre": "Sondra",
-      "apellido": "Macollin",
-      "votos": 0,
-      "porcentaje": "0.0",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/LIZA4V724BGQXJUZ3CU7A7HFWM.png",
-      "vicepresidente": "Leonardo Karam",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/biografia-de-sondra-macollins-trayectoria-de-la-abogada-que-es-candidata-presidencial/"
-    },
-    {
-      "id": 10,
-      "nombre": "Mauricio",
-      "apellido": "Lizcano",
-      "votos": 0,
-      "porcentaje": "0.0",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RPBSUZHVQNBFTLXXUTTGSBKLII.png",
-      "vicepresidente": "Luis Carlos Reyes",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-mauricio-lizcano-estos-son-los-giros-de-la-vida-y-la-politica-detras-de-su-candidatura-presidencial/"
-    },
-    {
       "id": 11,
       "nombre": "Santiago",
       "apellido": "Botero",
-      "votos": 0,
-      "porcentaje": "0.0",
+      "votos": 164882,
+      "porcentaje": "0.9",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/22OXP75M3BGB3IT6TJV3BQPRXE.png",
       "vicepresidente": "Carlos F. Cuevas",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/santiago-botero-biografia-del-empresario-que-busca-la-presidencia-entre-izquierda-derecha-y-firmas-noticias-hoy/"
     },
     {
+      "id": 5,
+      "nombre": "Claudia",
+      "apellido": "López",
+      "votos": 155246,
+      "porcentaje": "0.85",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/7W45GQLGZNA4DIOQTYDDBN37ZQ.png",
+      "vicepresidente": "Leonardo Huerta",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-claudia-lopez-su-paso-por-la-alcaldia-de-bogota-en-el-senado-y-su-salida-de-alianza-verde-noticias-hoy/"
+    },
+    {
+      "id": 10,
+      "nombre": "Mauricio",
+      "apellido": "Lizcano",
+      "votos": 43832,
+      "porcentaje": "0.24",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RPBSUZHVQNBFTLXXUTTGSBKLII.png",
+      "vicepresidente": "Luis Carlos Reyes",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-mauricio-lizcano-estos-son-los-giros-de-la-vida-y-la-politica-detras-de-su-candidatura-presidencial/"
+    },
+    {
+      "id": 9,
+      "nombre": "Miguel",
+      "apellido": "Uribe L.",
+      "votos": 21469,
+      "porcentaje": "0.11",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RSWLHACCQJE4REBC6GQRCIDAHI.png",
+      "vicepresidente": "Luisa F. Villegas",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/miguel-uribe-lodono-biografia-padres-hijos-trayectoria-politica-y-sus-tragedias-familiares/"
+    },
+    {
+      "id": 8,
+      "nombre": "Sondra",
+      "apellido": "Macollin",
+      "votos": 15122,
+      "porcentaje": "0.08",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/LIZA4V724BGQXJUZ3CU7A7HFWM.png",
+      "vicepresidente": "Leonardo Karam",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/biografia-de-sondra-macollins-trayectoria-de-la-abogada-que-es-candidata-presidencial/"
+    },
+    {
       "id": 7,
       "nombre": "Roy",
       "apellido": "Barreras",
-      "votos": 0,
-      "porcentaje": "0.0",
+      "votos": 155246,
+      "porcentaje": "0.05",
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/RPJ57BUBEVFXTKNGSE2GZ27XTE.png",
       "vicepresidente": "Martha Lucía Zamora",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-roy-barreras-es-de-izquierda-o-derecha-cargos-politicos-trayectoria-y-hoja-de-vida/"
+    },
+    {
+      "id": 6,
+      "nombre": "Gustavo",
+      "apellido": "Matamoros",
+      "votos": 4127,
+      "porcentaje": "0.02",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/M7DDNXFTHVDHLPI2U3555FRKOU.png",
+      "vicepresidente": "Mila María Paz",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/gustavo-matamoros-quien-es-el-general-que-quiere-ser-presidente-de-colombia-perfil-y-trayectoria-del-candidato-noticas-hoy/"
     }
   ]
 }
