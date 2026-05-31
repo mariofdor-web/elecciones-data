@@ -1,5 +1,5 @@
 {
-  "actualizacion": "2026-05-31T22:27:56.147Z",
+  "actualizacion": "2026-05-31T22:28:55.563Z",
   "escrutinio": {
     "escrutado": "79.77",
     "boletin": 13,
@@ -35,6 +35,16 @@
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/DDUKOTQKMZHCJLK3ZUZ6SZ3QCA.png",
       "vicepresidente": "Juan Daniel Oviedo",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/este-es-el-perfil-de-paloma-valencia-senadora-caucana-filosofa-y-uribista-que-quiere-la-presidencia-de-colombia/"
+    },
+    {
+      "id": 4,
+      "nombre": "Sergio",
+      "apellido": "Fajardo",
+      "votos": 944555,
+      "porcentaje": "4.2",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/YKJLEPEVONGTNGYNAARJVWM42Q.png",
+      "vicepresidente": "Edna Bonilla",
+      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-sergio-fajardo-su-paso-por-la-alcaldia-de-medellin-la-gobernacion-de-antioquia-y-su-relacion-con-petro-y-uribe-noticias-hoy/"
     },
     {
       "id": 5,
@@ -105,16 +115,6 @@
       "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/M7DDNXFTHVDHLPI2U3555FRKOU.png",
       "vicepresidente": "Mila María Paz",
       "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/gustavo-matamoros-quien-es-el-general-que-quiere-ser-presidente-de-colombia-perfil-y-trayectoria-del-candidato-noticas-hoy/"
-    },
-    {
-      "id": 4,
-      "nombre": "Sergio",
-      "apellido": "Fajardo",
-      "votos": 944555,
-      "porcentaje": "2026-02-04T05:00:00.000Z",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/YKJLEPEVONGTNGYNAARJVWM42Q.png",
-      "vicepresidente": "Edna Bonilla",
-      "url": "https://www.elespectador.com/politica/elecciones-colombia-2026/quien-es-sergio-fajardo-su-paso-por-la-alcaldia-de-medellin-la-gobernacion-de-antioquia-y-su-relacion-con-petro-y-uribe-noticias-hoy/"
     }
   ]
 }
