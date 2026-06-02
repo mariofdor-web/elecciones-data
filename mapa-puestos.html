@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resultados por puesto de votación</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+  :root{
+    --bg:#11100e;
+    --panel:#1b1a17;
+    --ink:#f4f1ea;
+    --muted:#9a958a;
+    --line:#34322d;
+    --accent:#d9462b;
+    --serif:"Georgia","Times New Roman",serif;
+    --sans:"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);overflow:hidden}
+
+  .wrap{display:flex;flex-direction:column;height:100vh}
+
+  header{
+    padding:14px 18px 12px;border-bottom:1px solid var(--line);
+    display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  }
+  header h1{
+    font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:.2px;
+  }
+  header h1 b{color:var(--accent);font-weight:600}
+  .meta{font-size:11.5px;color:var(--muted);display:flex;gap:14px;align-items:center}
+  .dot{width:7px;height:7px;border-radius:50%;background:#3ea76a;display:inline-block;margin-right:5px;
+       box-shadow:0 0 0 0 rgba(62,167,106,.6);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(62,167,106,.55)}70%{box-shadow:0 0 0 7px rgba(62,167,106,0)}100%{box-shadow:0 0 0 0 rgba(62,167,106,0)}}
+
+  #map{flex:1;background:#0c0b0a}
+
+  /* Marcadores */
+  .pt{border:1.5px solid rgba(0,0,0,.4);border-radius:50%}
+
+  /* Popup */
+  .leaflet-popup-content-wrapper{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+  .leaflet-popup-tip{background:var(--panel);border:1px solid var(--line)}
+  .leaflet-popup-content{margin:12px 14px;font-size:12.5px;line-height:1.45;min-width:200px}
+  .pop-h{font-family:var(--serif);font-size:14px;margin-bottom:2px}
+  .pop-sub{color:var(--muted);font-size:11px;margin-bottom:8px}
+  .bar{height:7px;border-radius:3px;margin:3px 0 8px;background:var(--line);overflow:hidden;display:flex}
+  .bar i{display:block;height:100%}
+  .row{display:flex;justify-content:space-between;font-size:11.5px;padding:1px 0}
+  .row span:last-child{color:var(--muted);font-variant-numeric:tabular-nums}
+  .swatch{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:6px;vertical-align:middle}
+  .nodata{color:var(--muted);font-style:italic}
+
+  /* Leyenda */
+  .legend{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-size:11.5px;line-height:1.7}
+  .legend b{font-family:var(--serif);font-weight:600;display:block;margin-bottom:5px;font-size:12px}
+  .legend .swatch{margin-right:7px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Resultados por <b>puesto de votación</b></h1>
+    <div class="meta">
+      <span><span class="dot"></span><span id="status">cargando…</span></span>
+      <span id="updated"></span>
+    </div>
+  </header>
+  <div id="map"></div>
+</div>
+
+<script>
+/* ===================== CONFIGURACIÓN ===================== */
+const CONFIG = {
+  // URL de la geometría (este mismo GeoJSON, estático, en tu GitHub Pages)
+  GEOJSON_URL: "puestos.geojson",
+
+  // URL del JSON de resultados que produce tu pipeline (Sheets -> Apps Script -> GitHub Pages)
+  // Debe estar indexado por Código_del_puesto, por ejemplo:
+  // { "160011901": { "Pacto":1234, "Centro":980, "total":2500 }, ... }
+  RESULTS_URL: "resultados.json",
+
+  // Campo del GeoJSON que sirve de llave para el cruce
+  JOIN_KEY: "Código_del_puesto",
+
+  // Cada cuánto recargar SOLO los resultados (ms). 0 = no recargar.
+  REFRESH_MS: 60000,
+
+  // Colores por candidato. Las llaves coinciden con las que produce cruzar.py.
+  COLORS: {
+    "De la Espriella": "#d9532b",
+    "Cepeda":          "#c8324f",
+    "Claudia López":   "#3ea76a",
+    "Paloma Valencia": "#2b6fd9",
+    "Fajardo":         "#d9a72b"
+  }
+};
+/* ======================================================== */
+
+const map = L.map('map',{zoomControl:true,attributionControl:false}).setView([4.62,-74.10],11);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(map);
+
+const layer = L.geoJSON(null,{
+  pointToLayer:(f,latlng)=>L.circleMarker(latlng,{
+    radius:5, className:'pt', weight:1.4, color:'#000', fillOpacity:.92, fillColor:'#6b6660'
+  })
+}).addTo(map);
+
+let geojson=null, results=null, byId={};
+
+const statusEl=document.getElementById('status');
+const updatedEl=document.getElementById('updated');
+
+function winnerColor(r){
+  if(!r) return '#6b6660';
+  let best=null,bestV=-1;
+  for(const k in CONFIG.COLORS){ if((r[k]||0)>bestV){bestV=r[k]||0;best=k;} }
+  return bestV>0 ? CONFIG.COLORS[best] : '#6b6660';
+}
+
+function popupHTML(p,r){
+  const cod=p[CONFIG.JOIN_KEY];
+  let body;
+  if(!r){
+    body='<div class="nodata">Sin datos para este puesto.</div>';
+  }else{
+    const total=r.total || Object.keys(CONFIG.COLORS).reduce((a,k)=>a+(r[k]||0),0) || 1;
+    const seg=Object.keys(CONFIG.COLORS)
+      .map(k=>`<i style="width:${((r[k]||0)/total*100).toFixed(1)}%;background:${CONFIG.COLORS[k]}"></i>`).join('');
+    const rows=Object.keys(CONFIG.COLORS)
+      .sort((a,b)=>(r[b]||0)-(r[a]||0))
+      .map(k=>`<div class="row"><span><span class="swatch" style="background:${CONFIG.COLORS[k]}"></span>${k}</span>
+               <span>${(r[k]||0).toLocaleString('es-CO')} · ${((r[k]||0)/total*100).toFixed(1)}%</span></div>`).join('');
+    body=`<div class="bar">${seg}</div>${rows}`;
+  }
+  return `<div class="pop-h">${p.Nombre_del_puesto||'Puesto'}</div>
+          <div class="pop-sub">${p.Nombre_de_localidad||''} · #${p.Número_del_puesto||''} · cód ${cod}</div>${body}`;
+}
+
+function applyResults(){
+  byId = results || {};
+  layer.eachLayer(l=>{
+    const p=l.feature.properties;
+    const r=byId[p[CONFIG.JOIN_KEY]];
+    l.setStyle({fillColor:winnerColor(r)});
+    l.setPopupContent ? null : null;
+    l.bindPopup(popupHTML(p,r));
+  });
+  updatedEl.textContent='Actualizado '+new Date().toLocaleTimeString('es-CO');
+  statusEl.textContent = results===DEMO ? 'datos de prueba' : 'en vivo';
+}
+
+/* ----- datos de prueba para que renderice sin tu endpoint ----- */
+let DEMO=null;
+function makeDemo(){
+  const keys=Object.keys(CONFIG.COLORS), out={};
+  geojson.features.forEach(f=>{
+    const c=f.properties[CONFIG.JOIN_KEY]; const r={total:0};
+    keys.forEach(k=>{const v=Math.floor(Math.random()*1200);r[k]=v;r.total+=v;});
+    out[c]=r;
+  });
+  return out;
+}
+
+async function loadGeo(){
+  const res=await fetch(CONFIG.GEOJSON_URL);
+  geojson=await res.json();
+  layer.addData(geojson);
+  try{ map.fitBounds(layer.getBounds(),{padding:[20,20]}); }catch(e){}
+}
+async function loadResults(){
+  try{
+    const res=await fetch(CONFIG.RESULTS_URL,{cache:'no-store'});
+    if(!res.ok) throw 0;
+    results=await res.json();
+  }catch(e){
+    DEMO = DEMO || makeDemo();
+    results=DEMO;
+  }
+  applyResults();
+}
+
+(async()=>{
+  try{ await loadGeo(); }
+  catch(e){ statusEl.textContent='no se pudo cargar el GeoJSON'; return; }
+  await loadResults();
+  if(CONFIG.REFRESH_MS>0) setInterval(loadResults,CONFIG.REFRESH_MS);
+})();
+
+/* Leyenda */
+const legend=L.control({position:'bottomright'});
+legend.onAdd=()=>{
+  const d=L.DomUtil.create('div','legend');
+  d.innerHTML='<b>Más votos</b>'+Object.keys(CONFIG.COLORS)
+    .map(k=>`<div><span class="swatch" style="background:${CONFIG.COLORS[k]}"></span>${k}</div>`).join('');
+  return d;
+};
+legend.addTo(map);
+</script>
+</body>
+</html>
